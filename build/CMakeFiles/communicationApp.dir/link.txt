@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/communicationApp.dir/src/main.cpp.o CMakeFiles/communicationApp.dir/src/emojis.cpp.o CMakeFiles/communicationApp.dir/src/network_client.cpp.o CMakeFiles/communicationApp.dir/src/network_server.cpp.o CMakeFiles/communicationApp.dir/src/communication_object_factory.cpp.o  -o ../bin/communicationApp 

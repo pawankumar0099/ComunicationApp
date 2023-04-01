@@ -1,0 +1,70 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/c/VirtualMachine/Shared/New folder/two/communication/include/communication.h
+iostream
+-
+
+/mnt/c/VirtualMachine/Shared/New folder/two/communication/include/constant.h
+
+/mnt/c/VirtualMachine/Shared/New folder/two/communication/include/emojis.h
+iostream
+-
+
+/mnt/c/VirtualMachine/Shared/New folder/two/communication/include/network_client.h
+communication.h
+/mnt/c/VirtualMachine/Shared/New folder/two/communication/include/communication.h
+arpa/inet.h
+-
+constant.h
+/mnt/c/VirtualMachine/Shared/New folder/two/communication/include/constant.h
+
+/mnt/c/VirtualMachine/Shared/New folder/two/communication/include/network_server.h
+communication.h
+/mnt/c/VirtualMachine/Shared/New folder/two/communication/include/communication.h
+arpa/inet.h
+-
+constant.h
+/mnt/c/VirtualMachine/Shared/New folder/two/communication/include/constant.h
+
+/mnt/c/VirtualMachine/Shared/New folder/two/communication/src/network_client.cpp
+../include/network_client.h
+/mnt/c/VirtualMachine/Shared/New folder/two/communication/include/network_client.h
+iostream
+-
+cstring
+-
+sys/socket.h
+-
+arpa/inet.h
+-
+unistd.h
+-
+../include/emojis.h
+/mnt/c/VirtualMachine/Shared/New folder/two/communication/include/emojis.h
+
+/mnt/c/VirtualMachine/Shared/New folder/two/communication/src/network_server.cpp
+../include/communication.h
+/mnt/c/VirtualMachine/Shared/New folder/two/communication/include/communication.h
+iostream
+-
+cstring
+-
+sys/socket.h
+-
+arpa/inet.h
+-
+unistd.h
+-
+../include/network_server.h
+/mnt/c/VirtualMachine/Shared/New folder/two/communication/include/network_server.h
+../include/emojis.h
+/mnt/c/VirtualMachine/Shared/New folder/two/communication/include/emojis.h
+../include/constant.h
+/mnt/c/VirtualMachine/Shared/New folder/two/communication/include/constant.h
+
