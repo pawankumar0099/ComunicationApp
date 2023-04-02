@@ -6,7 +6,7 @@
 #include <unistd.h>
 #include "../include/emojis.h"
 
-NetworkClient::NetworkClient(unsigned short network_port, char * ip_address)
+NetworkClient::NetworkClient(unsigned short network_port, char *ip_address)
 {
     // create socket
     if ((client_socket = socket(AF_INET, SOCK_STREAM, 0)) < 0)
@@ -24,9 +24,13 @@ NetworkClient::NetworkClient(unsigned short network_port, char * ip_address)
         std::cerr << "Invalid server address" << std::endl;
         throw std::runtime_error("Invalid server address");
     }
+}
 
+void NetworkClient::connect()
+{
     // connect to server
-    if (connect(client_socket, (sockaddr *)&server_address, sizeof(server_address)) < 0)
+    std::cout << "dddd" << std::endl;
+    if (::connect(client_socket, (sockaddr *)&server_address, sizeof(server_address)) < 0)
     {
         std::cerr << "Failed to connect to server" << std::endl;
         throw std::runtime_error("Failed to connect to server");

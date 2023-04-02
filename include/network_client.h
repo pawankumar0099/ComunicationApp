@@ -14,8 +14,8 @@ private:
 public:
     NetworkClient(unsigned short network_port, char * ip_address);
 
+    void connect();
     void sendMessage();
-
     void recieveMessage();
     void handleMessage();
 };

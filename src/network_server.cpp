@@ -33,9 +33,11 @@ NetworkServer::NetworkServer(unsigned short network_port, char *ip_address)
         std::cerr << "Failed to listen for incoming connections" << std::endl;
         throw std::runtime_error("Failed to listen for incoming connections");
     }
-
     std::cout << "Server listening on port " << network_port << std::endl;
+}
 
+void NetworkServer::connect()
+{
     socklen_t client_address_len = sizeof(client_address);
     if ((client_socket = accept(server_socket, (sockaddr *)&client_address, &client_address_len)) < 0)
     {
@@ -69,5 +71,4 @@ void NetworkServer::handleMessage()
         recieveMessage();
         sendMessage();
     }
-    
 }

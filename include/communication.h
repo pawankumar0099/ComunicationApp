@@ -6,6 +6,7 @@
 class Communication
 {
 public:
+    virtual void connect() = 0;
     virtual void sendMessage() = 0;
     virtual void recieveMessage() = 0;
     virtual void handleMessage() = 0;

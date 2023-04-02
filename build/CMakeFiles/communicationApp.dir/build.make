@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/mnt/c/VirtualMachine/Shared/New folder/two/communication"
+CMAKE_SOURCE_DIR = /mnt/c/Users/pawan/Desktop/Newfolder/ComunicationApp
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/mnt/c/VirtualMachine/Shared/New folder/two/communication/build"
+CMAKE_BINARY_DIR = /mnt/c/Users/pawan/Desktop/Newfolder/ComunicationApp/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/communicationApp.dir/depend.make
@@ -59,68 +59,68 @@ include CMakeFiles/communicationApp.dir/flags.make
 
 CMakeFiles/communicationApp.dir/src/main.cpp.o: CMakeFiles/communicationApp.dir/flags.make
 CMakeFiles/communicationApp.dir/src/main.cpp.o: ../src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/VirtualMachine/Shared/New folder/two/communication/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/communicationApp.dir/src/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/communicationApp.dir/src/main.cpp.o -c "/mnt/c/VirtualMachine/Shared/New folder/two/communication/src/main.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/pawan/Desktop/Newfolder/ComunicationApp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/communicationApp.dir/src/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/communicationApp.dir/src/main.cpp.o -c /mnt/c/Users/pawan/Desktop/Newfolder/ComunicationApp/src/main.cpp
 
 CMakeFiles/communicationApp.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/communicationApp.dir/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/VirtualMachine/Shared/New folder/two/communication/src/main.cpp" > CMakeFiles/communicationApp.dir/src/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/pawan/Desktop/Newfolder/ComunicationApp/src/main.cpp > CMakeFiles/communicationApp.dir/src/main.cpp.i
 
 CMakeFiles/communicationApp.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/communicationApp.dir/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/VirtualMachine/Shared/New folder/two/communication/src/main.cpp" -o CMakeFiles/communicationApp.dir/src/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/pawan/Desktop/Newfolder/ComunicationApp/src/main.cpp -o CMakeFiles/communicationApp.dir/src/main.cpp.s
 
 CMakeFiles/communicationApp.dir/src/emojis.cpp.o: CMakeFiles/communicationApp.dir/flags.make
 CMakeFiles/communicationApp.dir/src/emojis.cpp.o: ../src/emojis.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/VirtualMachine/Shared/New folder/two/communication/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/communicationApp.dir/src/emojis.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/communicationApp.dir/src/emojis.cpp.o -c "/mnt/c/VirtualMachine/Shared/New folder/two/communication/src/emojis.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/pawan/Desktop/Newfolder/ComunicationApp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/communicationApp.dir/src/emojis.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/communicationApp.dir/src/emojis.cpp.o -c /mnt/c/Users/pawan/Desktop/Newfolder/ComunicationApp/src/emojis.cpp
 
 CMakeFiles/communicationApp.dir/src/emojis.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/communicationApp.dir/src/emojis.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/VirtualMachine/Shared/New folder/two/communication/src/emojis.cpp" > CMakeFiles/communicationApp.dir/src/emojis.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/pawan/Desktop/Newfolder/ComunicationApp/src/emojis.cpp > CMakeFiles/communicationApp.dir/src/emojis.cpp.i
 
 CMakeFiles/communicationApp.dir/src/emojis.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/communicationApp.dir/src/emojis.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/VirtualMachine/Shared/New folder/two/communication/src/emojis.cpp" -o CMakeFiles/communicationApp.dir/src/emojis.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/pawan/Desktop/Newfolder/ComunicationApp/src/emojis.cpp -o CMakeFiles/communicationApp.dir/src/emojis.cpp.s
 
 CMakeFiles/communicationApp.dir/src/network_client.cpp.o: CMakeFiles/communicationApp.dir/flags.make
 CMakeFiles/communicationApp.dir/src/network_client.cpp.o: ../src/network_client.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/VirtualMachine/Shared/New folder/two/communication/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/communicationApp.dir/src/network_client.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/communicationApp.dir/src/network_client.cpp.o -c "/mnt/c/VirtualMachine/Shared/New folder/two/communication/src/network_client.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/pawan/Desktop/Newfolder/ComunicationApp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/communicationApp.dir/src/network_client.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/communicationApp.dir/src/network_client.cpp.o -c /mnt/c/Users/pawan/Desktop/Newfolder/ComunicationApp/src/network_client.cpp
 
 CMakeFiles/communicationApp.dir/src/network_client.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/communicationApp.dir/src/network_client.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/VirtualMachine/Shared/New folder/two/communication/src/network_client.cpp" > CMakeFiles/communicationApp.dir/src/network_client.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/pawan/Desktop/Newfolder/ComunicationApp/src/network_client.cpp > CMakeFiles/communicationApp.dir/src/network_client.cpp.i
 
 CMakeFiles/communicationApp.dir/src/network_client.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/communicationApp.dir/src/network_client.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/VirtualMachine/Shared/New folder/two/communication/src/network_client.cpp" -o CMakeFiles/communicationApp.dir/src/network_client.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/pawan/Desktop/Newfolder/ComunicationApp/src/network_client.cpp -o CMakeFiles/communicationApp.dir/src/network_client.cpp.s
 
 CMakeFiles/communicationApp.dir/src/network_server.cpp.o: CMakeFiles/communicationApp.dir/flags.make
 CMakeFiles/communicationApp.dir/src/network_server.cpp.o: ../src/network_server.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/VirtualMachine/Shared/New folder/two/communication/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/communicationApp.dir/src/network_server.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/communicationApp.dir/src/network_server.cpp.o -c "/mnt/c/VirtualMachine/Shared/New folder/two/communication/src/network_server.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/pawan/Desktop/Newfolder/ComunicationApp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/communicationApp.dir/src/network_server.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/communicationApp.dir/src/network_server.cpp.o -c /mnt/c/Users/pawan/Desktop/Newfolder/ComunicationApp/src/network_server.cpp
 
 CMakeFiles/communicationApp.dir/src/network_server.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/communicationApp.dir/src/network_server.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/VirtualMachine/Shared/New folder/two/communication/src/network_server.cpp" > CMakeFiles/communicationApp.dir/src/network_server.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/pawan/Desktop/Newfolder/ComunicationApp/src/network_server.cpp > CMakeFiles/communicationApp.dir/src/network_server.cpp.i
 
 CMakeFiles/communicationApp.dir/src/network_server.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/communicationApp.dir/src/network_server.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/VirtualMachine/Shared/New folder/two/communication/src/network_server.cpp" -o CMakeFiles/communicationApp.dir/src/network_server.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/pawan/Desktop/Newfolder/ComunicationApp/src/network_server.cpp -o CMakeFiles/communicationApp.dir/src/network_server.cpp.s
 
 CMakeFiles/communicationApp.dir/src/communication_object_factory.cpp.o: CMakeFiles/communicationApp.dir/flags.make
 CMakeFiles/communicationApp.dir/src/communication_object_factory.cpp.o: ../src/communication_object_factory.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/VirtualMachine/Shared/New folder/two/communication/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/communicationApp.dir/src/communication_object_factory.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/communicationApp.dir/src/communication_object_factory.cpp.o -c "/mnt/c/VirtualMachine/Shared/New folder/two/communication/src/communication_object_factory.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/pawan/Desktop/Newfolder/ComunicationApp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/communicationApp.dir/src/communication_object_factory.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/communicationApp.dir/src/communication_object_factory.cpp.o -c /mnt/c/Users/pawan/Desktop/Newfolder/ComunicationApp/src/communication_object_factory.cpp
 
 CMakeFiles/communicationApp.dir/src/communication_object_factory.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/communicationApp.dir/src/communication_object_factory.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/VirtualMachine/Shared/New folder/two/communication/src/communication_object_factory.cpp" > CMakeFiles/communicationApp.dir/src/communication_object_factory.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/pawan/Desktop/Newfolder/ComunicationApp/src/communication_object_factory.cpp > CMakeFiles/communicationApp.dir/src/communication_object_factory.cpp.i
 
 CMakeFiles/communicationApp.dir/src/communication_object_factory.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/communicationApp.dir/src/communication_object_factory.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/VirtualMachine/Shared/New folder/two/communication/src/communication_object_factory.cpp" -o CMakeFiles/communicationApp.dir/src/communication_object_factory.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/pawan/Desktop/Newfolder/ComunicationApp/src/communication_object_factory.cpp -o CMakeFiles/communicationApp.dir/src/communication_object_factory.cpp.s
 
 # Object files for target communicationApp
 communicationApp_OBJECTS = \
@@ -140,7 +140,7 @@ communicationApp_EXTERNAL_OBJECTS =
 ../bin/communicationApp: CMakeFiles/communicationApp.dir/src/communication_object_factory.cpp.o
 ../bin/communicationApp: CMakeFiles/communicationApp.dir/build.make
 ../bin/communicationApp: CMakeFiles/communicationApp.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/mnt/c/VirtualMachine/Shared/New folder/two/communication/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable ../bin/communicationApp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/c/Users/pawan/Desktop/Newfolder/ComunicationApp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable ../bin/communicationApp"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/communicationApp.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -153,6 +153,6 @@ CMakeFiles/communicationApp.dir/clean:
 .PHONY : CMakeFiles/communicationApp.dir/clean
 
 CMakeFiles/communicationApp.dir/depend:
-	cd "/mnt/c/VirtualMachine/Shared/New folder/two/communication/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/mnt/c/VirtualMachine/Shared/New folder/two/communication" "/mnt/c/VirtualMachine/Shared/New folder/two/communication" "/mnt/c/VirtualMachine/Shared/New folder/two/communication/build" "/mnt/c/VirtualMachine/Shared/New folder/two/communication/build" "/mnt/c/VirtualMachine/Shared/New folder/two/communication/build/CMakeFiles/communicationApp.dir/DependInfo.cmake" --color=$(COLOR)
+	cd /mnt/c/Users/pawan/Desktop/Newfolder/ComunicationApp/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/c/Users/pawan/Desktop/Newfolder/ComunicationApp /mnt/c/Users/pawan/Desktop/Newfolder/ComunicationApp /mnt/c/Users/pawan/Desktop/Newfolder/ComunicationApp/build /mnt/c/Users/pawan/Desktop/Newfolder/ComunicationApp/build /mnt/c/Users/pawan/Desktop/Newfolder/ComunicationApp/build/CMakeFiles/communicationApp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/communicationApp.dir/depend
 

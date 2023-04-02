@@ -4,11 +4,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/mnt/c/VirtualMachine/Shared/New folder/two/communication/src/communication_object_factory.cpp" "/mnt/c/VirtualMachine/Shared/New folder/two/communication/build/CMakeFiles/communicationApp.dir/src/communication_object_factory.cpp.o"
-  "/mnt/c/VirtualMachine/Shared/New folder/two/communication/src/emojis.cpp" "/mnt/c/VirtualMachine/Shared/New folder/two/communication/build/CMakeFiles/communicationApp.dir/src/emojis.cpp.o"
-  "/mnt/c/VirtualMachine/Shared/New folder/two/communication/src/main.cpp" "/mnt/c/VirtualMachine/Shared/New folder/two/communication/build/CMakeFiles/communicationApp.dir/src/main.cpp.o"
-  "/mnt/c/VirtualMachine/Shared/New folder/two/communication/src/network_client.cpp" "/mnt/c/VirtualMachine/Shared/New folder/two/communication/build/CMakeFiles/communicationApp.dir/src/network_client.cpp.o"
-  "/mnt/c/VirtualMachine/Shared/New folder/two/communication/src/network_server.cpp" "/mnt/c/VirtualMachine/Shared/New folder/two/communication/build/CMakeFiles/communicationApp.dir/src/network_server.cpp.o"
+  "/mnt/c/Users/pawan/Desktop/Newfolder/ComunicationApp/src/communication_object_factory.cpp" "/mnt/c/Users/pawan/Desktop/Newfolder/ComunicationApp/build/CMakeFiles/communicationApp.dir/src/communication_object_factory.cpp.o"
+  "/mnt/c/Users/pawan/Desktop/Newfolder/ComunicationApp/src/emojis.cpp" "/mnt/c/Users/pawan/Desktop/Newfolder/ComunicationApp/build/CMakeFiles/communicationApp.dir/src/emojis.cpp.o"
+  "/mnt/c/Users/pawan/Desktop/Newfolder/ComunicationApp/src/main.cpp" "/mnt/c/Users/pawan/Desktop/Newfolder/ComunicationApp/build/CMakeFiles/communicationApp.dir/src/main.cpp.o"
+  "/mnt/c/Users/pawan/Desktop/Newfolder/ComunicationApp/src/network_client.cpp" "/mnt/c/Users/pawan/Desktop/Newfolder/ComunicationApp/build/CMakeFiles/communicationApp.dir/src/network_client.cpp.o"
+  "/mnt/c/Users/pawan/Desktop/Newfolder/ComunicationApp/src/network_server.cpp" "/mnt/c/Users/pawan/Desktop/Newfolder/ComunicationApp/build/CMakeFiles/communicationApp.dir/src/network_server.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

@@ -1,4 +1,4 @@
-# Install script for directory: /mnt/c/VirtualMachine/Shared/New folder/two/communication
+# Install script for directory: /mnt/c/Users/pawan/Desktop/Newfolder/ComunicationApp
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/mnt/c/VirtualMachine/Shared/New folder/two/communication/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/mnt/c/Users/pawan/Desktop/Newfolder/ComunicationApp/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
