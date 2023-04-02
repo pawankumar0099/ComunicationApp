@@ -29,7 +29,6 @@ NetworkClient::NetworkClient(unsigned short network_port, char *ip_address)
 void NetworkClient::connect()
 {
     // connect to server
-    std::cout << "dddd" << std::endl;
     if (::connect(client_socket, (sockaddr *)&server_address, sizeof(server_address)) < 0)
     {
         std::cerr << "Failed to connect to server" << std::endl;
