@@ -5,7 +5,7 @@ class Emojis
 public:
     Emojis(){};
 
-    std::string replace_with_unicode(std::string message);
+    static std::string replace_with_unicode(std::string message);
 
     ~Emojis(){};
 };

@@ -38,8 +38,7 @@ void NetworkClient::sendMessage()
     std::string message;
     std::cout << "Enter message : ";
     std::getline(std::cin, message);
-    Emojis *emojis = new Emojis();
-    message = emojis->replace_with_unicode(message);
+    message = Emojis::replace_with_unicode(message);
     ::send(client_socket, message.c_str(), message.length(), 0);
 }
 

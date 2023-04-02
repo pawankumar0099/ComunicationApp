@@ -7,7 +7,7 @@
 #include "../include/network_server.h"
 #include "../include/emojis.h"
 #include "../include/constant.h"
-NetworkServer::NetworkServer(unsigned short network_port, char * ip_address)
+NetworkServer::NetworkServer(unsigned short network_port, char *ip_address)
 {
     if ((server_socket = socket(AF_INET, SOCK_STREAM, 0)) == 0)
     {
@@ -51,8 +51,7 @@ void NetworkServer::sendMessage()
     std::string message;
     std::cout << "Enter message : ";
     std::getline(std::cin, message);
-    Emojis *emojis = new Emojis();
-    message = emojis->replace_with_unicode(message);
+    message = Emojis::replace_with_unicode(message);
     ::send(client_socket, message.c_str(), message.length(), 0);
 }
 
@@ -70,4 +69,5 @@ void NetworkServer::handleMessage()
         recieveMessage();
         sendMessage();
     }
+    
 }
