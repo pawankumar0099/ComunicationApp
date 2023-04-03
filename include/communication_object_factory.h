@@ -2,11 +2,11 @@
 #define COMMUNICATION_OBJECT_FACTORY_H
 #include "communication.h"
 
+// class to return object
 class CommunicationObjectFactory
 {
 public:
-    static Communication *getObject(int com_type, char *server_or_client, char *ip_address, unsigned short network_port);
+    static Communication *getObject(int argc, char *argv[]);
 };
-
 
 #endif

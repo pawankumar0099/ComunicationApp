@@ -1,8 +1,10 @@
 #include <iostream>
 #include "../include/emojis.h"
 
+// replace emojis character with unicode
 std::string Emojis::replace_with_unicode(std::string message)
 {
+    // replace all accurance of :) with unicode
     while (message.find(":)") != std::string::npos)
         message.replace(message.find(":)"), sizeof(":)") - 1, "\U0001F60A");
 

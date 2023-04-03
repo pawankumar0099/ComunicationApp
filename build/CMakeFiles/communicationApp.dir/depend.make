@@ -14,7 +14,6 @@ CMakeFiles/communicationApp.dir/src/emojis.cpp.o: ../src/emojis.cpp
 
 CMakeFiles/communicationApp.dir/src/main.cpp.o: ../include/communication.h
 CMakeFiles/communicationApp.dir/src/main.cpp.o: ../include/communication_object_factory.h
-CMakeFiles/communicationApp.dir/src/main.cpp.o: ../include/enums.h
 CMakeFiles/communicationApp.dir/src/main.cpp.o: ../src/main.cpp
 
 CMakeFiles/communicationApp.dir/src/network_client.cpp.o: ../include/communication.h

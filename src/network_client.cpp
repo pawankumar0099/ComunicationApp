@@ -1,11 +1,12 @@
-#include "../include/network_client.h"
 #include <iostream>
 #include <cstring>
 #include <sys/socket.h>
 #include <arpa/inet.h>
 #include <unistd.h>
+#include "../include/network_client.h"
 #include "../include/emojis.h"
 
+// constructor to create socket
 NetworkClient::NetworkClient(unsigned short network_port, char *ip_address)
 {
     // create socket
@@ -26,9 +27,9 @@ NetworkClient::NetworkClient(unsigned short network_port, char *ip_address)
     }
 }
 
+// connect to server
 void NetworkClient::connect()
 {
-    // connect to server
     if (::connect(client_socket, (sockaddr *)&server_address, sizeof(server_address)) < 0)
     {
         std::cerr << "Failed to connect to server" << std::endl;
@@ -41,8 +42,18 @@ void NetworkClient::sendMessage()
     std::string message;
     std::cout << "Enter message : ";
     std::getline(std::cin, message);
+    // replacing emojis with unicode
     message = Emojis::replace_with_unicode(message);
-    ::send(client_socket, message.c_str(), message.length(), 0);
+    // send message to server
+    int bytes_sent = ::send(client_socket, message.c_str(), message.length(), 0);
+    if (bytes_sent == -1)
+    {
+        throw std::runtime_error("Error in sending message");
+    }
+    else if (bytes_sent != message.length())
+    {
+        throw std::runtime_error("complete message not sent");
+    }
 }
 
 void NetworkClient::recieveMessage()
@@ -50,7 +61,18 @@ void NetworkClient::recieveMessage()
     // receive message from server
     memset(buffer, 0, sizeof(buffer));
     int bytes_received = ::recv(client_socket, buffer, sizeof(buffer), 0);
-    std::cout << "Received message from server: " << buffer << std::endl;
+    if (bytes_received == -1)
+    {
+        throw std::runtime_error("Error receiving message");
+    }
+    else if (bytes_received == 0)
+    {
+        throw std::runtime_error("Connection closed");
+    }
+    else
+    {
+        std::cout << "Received message from server: " << buffer << std::endl;
+    }
 }
 
 void NetworkClient::handleMessage()

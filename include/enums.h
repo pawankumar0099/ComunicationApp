@@ -1,7 +1,7 @@
 #ifndef ENUMS_H
 #define ENUMS_H
 
-enum Com_Type
+enum communication_type
 {
     NETWORK = 1,
     USB,
