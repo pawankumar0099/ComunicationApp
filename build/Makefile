@@ -258,6 +258,33 @@ src/network_server.cpp.s:
 	$(MAKE) -f CMakeFiles/communicationApp.dir/build.make CMakeFiles/communicationApp.dir/src/network_server.cpp.s
 .PHONY : src/network_server.cpp.s
 
+src/validator.o: src/validator.cpp.o
+
+.PHONY : src/validator.o
+
+# target to build an object file
+src/validator.cpp.o:
+	$(MAKE) -f CMakeFiles/communicationApp.dir/build.make CMakeFiles/communicationApp.dir/src/validator.cpp.o
+.PHONY : src/validator.cpp.o
+
+src/validator.i: src/validator.cpp.i
+
+.PHONY : src/validator.i
+
+# target to preprocess a source file
+src/validator.cpp.i:
+	$(MAKE) -f CMakeFiles/communicationApp.dir/build.make CMakeFiles/communicationApp.dir/src/validator.cpp.i
+.PHONY : src/validator.cpp.i
+
+src/validator.s: src/validator.cpp.s
+
+.PHONY : src/validator.s
+
+# target to generate assembly for a file
+src/validator.cpp.s:
+	$(MAKE) -f CMakeFiles/communicationApp.dir/build.make CMakeFiles/communicationApp.dir/src/validator.cpp.s
+.PHONY : src/validator.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -282,6 +309,9 @@ help:
 	@echo "... src/network_server.o"
 	@echo "... src/network_server.i"
 	@echo "... src/network_server.s"
+	@echo "... src/validator.o"
+	@echo "... src/validator.i"
+	@echo "... src/validator.s"
 .PHONY : help
 
 

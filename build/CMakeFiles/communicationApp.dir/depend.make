@@ -7,6 +7,7 @@ CMakeFiles/communicationApp.dir/src/communication_object_factory.cpp.o: ../inclu
 CMakeFiles/communicationApp.dir/src/communication_object_factory.cpp.o: ../include/enums.h
 CMakeFiles/communicationApp.dir/src/communication_object_factory.cpp.o: ../include/network_client.h
 CMakeFiles/communicationApp.dir/src/communication_object_factory.cpp.o: ../include/network_server.h
+CMakeFiles/communicationApp.dir/src/communication_object_factory.cpp.o: ../include/validator.h
 CMakeFiles/communicationApp.dir/src/communication_object_factory.cpp.o: ../src/communication_object_factory.cpp
 
 CMakeFiles/communicationApp.dir/src/emojis.cpp.o: ../include/emojis.h
@@ -27,4 +28,7 @@ CMakeFiles/communicationApp.dir/src/network_server.cpp.o: ../include/constant.h
 CMakeFiles/communicationApp.dir/src/network_server.cpp.o: ../include/emojis.h
 CMakeFiles/communicationApp.dir/src/network_server.cpp.o: ../include/network_server.h
 CMakeFiles/communicationApp.dir/src/network_server.cpp.o: ../src/network_server.cpp
+
+CMakeFiles/communicationApp.dir/src/validator.cpp.o: ../include/validator.h
+CMakeFiles/communicationApp.dir/src/validator.cpp.o: ../src/validator.cpp
 

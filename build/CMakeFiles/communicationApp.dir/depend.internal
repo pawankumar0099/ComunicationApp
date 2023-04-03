@@ -8,6 +8,7 @@ CMakeFiles/communicationApp.dir/src/communication_object_factory.cpp.o
  /mnt/c/Users/pawan/Desktop/Newfolder/ComunicationApp/include/enums.h
  /mnt/c/Users/pawan/Desktop/Newfolder/ComunicationApp/include/network_client.h
  /mnt/c/Users/pawan/Desktop/Newfolder/ComunicationApp/include/network_server.h
+ /mnt/c/Users/pawan/Desktop/Newfolder/ComunicationApp/include/validator.h
  /mnt/c/Users/pawan/Desktop/Newfolder/ComunicationApp/src/communication_object_factory.cpp
 CMakeFiles/communicationApp.dir/src/emojis.cpp.o
  /mnt/c/Users/pawan/Desktop/Newfolder/ComunicationApp/include/emojis.h
@@ -28,3 +29,6 @@ CMakeFiles/communicationApp.dir/src/network_server.cpp.o
  /mnt/c/Users/pawan/Desktop/Newfolder/ComunicationApp/include/emojis.h
  /mnt/c/Users/pawan/Desktop/Newfolder/ComunicationApp/include/network_server.h
  /mnt/c/Users/pawan/Desktop/Newfolder/ComunicationApp/src/network_server.cpp
+CMakeFiles/communicationApp.dir/src/validator.cpp.o
+ /mnt/c/Users/pawan/Desktop/Newfolder/ComunicationApp/include/validator.h
+ /mnt/c/Users/pawan/Desktop/Newfolder/ComunicationApp/src/validator.cpp

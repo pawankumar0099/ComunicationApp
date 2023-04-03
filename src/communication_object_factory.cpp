@@ -4,7 +4,8 @@
 #include "../include/communication_object_factory.h"
 #include "../include/network_server.h"
 #include "../include/network_client.h"
-#include <regex>
+#include "../include/validator.h"
+
 
 // convert string into enum
 communication_type stringToEnum(const std::string &str)
@@ -17,16 +18,6 @@ communication_type stringToEnum(const std::string &str)
     {
         throw std::invalid_argument("Invalid communication_type: " + str + " you can enter network only");
     }
-}
-
-// validate IP address
-bool is_valid_ip(std::string ip_str)
-{
-    // Regular expression pattern for a valid IP address
-    std::regex pattern("^\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}$");
-
-    // Check if the string matches the pattern
-    return std::regex_match(ip_str, pattern);
 }
 
 // Object Factory
@@ -45,15 +36,20 @@ Communication *CommunicationObjectFactory::getObject(int argc, char *argv[])
             throw std::invalid_argument("Invalid input");
         }
         try
-        { // user want to start application as server or client
+        { // start application as server or client
             std::string server_or_client = argv[2];
             std::string ip_address = argv[3];
-            if (!is_valid_ip(ip_address))
+            std::string port_str = argv[4];
+            if (!Validator::is_valid_ip(ip_address))
             {
                 throw std::invalid_argument("Invalid IP address");
             }
-            int network_port = std::stoi(argv[4]);
-            unsigned short us_network_port = static_cast<unsigned short>(network_port);
+            int network_port = Validator::is_valid_port(port_str);
+            if (network_port == -1)
+            {
+                throw std::invalid_argument("Invalid port");
+            }
+
             if (server_or_client == "server")
             {
                 // retuen Server object

@@ -6,6 +6,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/communicationApp.dir/src/main.cpp.o"
   "CMakeFiles/communicationApp.dir/src/network_client.cpp.o"
   "CMakeFiles/communicationApp.dir/src/network_server.cpp.o"
+  "CMakeFiles/communicationApp.dir/src/validator.cpp.o"
 )
 
 # Per-language clean rules from dependency scanning.
