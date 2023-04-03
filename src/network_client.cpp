@@ -7,7 +7,7 @@
 #include "../include/emojis.h"
 
 // constructor to create socket
-NetworkClient::NetworkClient(unsigned short network_port, char *ip_address)
+NetworkClient::NetworkClient(unsigned short network_port, std::string ip_address)
 {
     // create socket
     if ((client_socket = socket(AF_INET, SOCK_STREAM, 0)) < 0)
@@ -20,7 +20,7 @@ NetworkClient::NetworkClient(unsigned short network_port, char *ip_address)
     server_address.sin_family = AF_INET;
     server_address.sin_port = htons(network_port);
 
-    if (inet_pton(AF_INET, ip_address, &server_address.sin_addr) <= 0)
+    if (inet_pton(AF_INET, ip_address.c_str(), &server_address.sin_addr) <= 0)
     {
         std::cerr << "Invalid server address" << std::endl;
         throw std::runtime_error("Invalid server address");

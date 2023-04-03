@@ -14,7 +14,7 @@ private:
     char buffer[buffer_size]{};
 
 public:
-    NetworkServer(unsigned short network_port, char *ip_address);
+    NetworkServer(unsigned short network_port, std::string ip_address);
 
     void connect();
     void sendMessage();

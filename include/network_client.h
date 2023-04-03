@@ -12,7 +12,7 @@ private:
     char buffer[buffer_size]{};
 
 public:
-    NetworkClient(unsigned short network_port, char * ip_address);
+    NetworkClient(unsigned short network_port, std::string ip_address);
 
     void connect();
     void sendMessage();

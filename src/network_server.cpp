@@ -7,8 +7,8 @@
 #include "../include/emojis.h"
 #include "../include/constant.h"
 
-//constructor to create a socket,bind and listen
-NetworkServer::NetworkServer(unsigned short network_port, char *ip_address)
+// constructor to create a socket,bind and listen
+NetworkServer::NetworkServer(unsigned short network_port, std::string ip_address)
 {
     if ((server_socket = socket(AF_INET, SOCK_STREAM, 0)) == 0)
     {
@@ -18,7 +18,7 @@ NetworkServer::NetworkServer(unsigned short network_port, char *ip_address)
 
     // set server address
     server_address.sin_family = AF_INET;
-    server_address.sin_addr.s_addr = inet_addr(ip_address);
+    server_address.sin_addr.s_addr = inet_addr(ip_address.c_str());
     server_address.sin_port = htons(network_port);
 
     // bind socket to server address

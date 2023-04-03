@@ -17,11 +17,13 @@ int main(int argc, char *argv[])
         Communication *communication = CommunicationObjectFactory::getObject(argc, argv);
         communication->connect();
         communication->handleMessage();
+
+        delete communication;
+        
     }
     catch (const std::exception &e)
     {
         std::cerr << e.what() << std::endl;
-        std::cout << "runtime error occured" << std::endl;
     }
 
     return 0;

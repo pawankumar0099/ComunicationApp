@@ -15,12 +15,12 @@ communication_type stringToEnum(const std::string &str)
     }
     else
     {
-        throw std::invalid_argument("Invalid communication_type: " + str + "you can enter network only");
+        throw std::invalid_argument("Invalid communication_type: " + str + " you can enter network only");
     }
 }
 
 // validate IP address
-bool is_valid_ip(const char *ip_str)
+bool is_valid_ip(std::string ip_str)
 {
     // Regular expression pattern for a valid IP address
     std::regex pattern("^\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}$");
@@ -46,20 +46,20 @@ Communication *CommunicationObjectFactory::getObject(int argc, char *argv[])
         }
         try
         { // user want to start application as server or client
-            char *server_or_client = argv[2];
-            char *ip_address = argv[3];
+            std::string server_or_client = argv[2];
+            std::string ip_address = argv[3];
             if (!is_valid_ip(ip_address))
             {
                 throw std::invalid_argument("Invalid IP address");
             }
             int network_port = std::stoi(argv[4]);
             unsigned short us_network_port = static_cast<unsigned short>(network_port);
-            if (strcmp(server_or_client, "server") == 0)
+            if (server_or_client == "server")
             {
                 // retuen Server object
                 return new NetworkServer(network_port, ip_address);
             }
-            else if (strcmp(server_or_client, "client") == 0)
+            else if (server_or_client == "client")
             {
                 // return client object
                 return new NetworkClient(network_port, ip_address);
